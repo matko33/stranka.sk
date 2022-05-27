@@ -1,0 +1,234 @@
+/* ----------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------------------- */
+
+
+
+
+header {
+	width: 100%;
+	height: 100px;
+	color: green;
+    z-index: 10;
+	display: flex;
+	background-color: rgb(102, 102, 102);
+	position: fixed;
+	top: 0;
+}
+.logo{
+	margin-top: 40px;
+	margin-left: 5%;
+	width: 120px;
+	height: 120px;
+	color: green;
+    z-index: 20;
+	position: absolute;
+	float: left;
+}
+.LogoObr{
+	width: 100%;
+	height: auto;
+    cursor: pointer;
+}
+.menu{
+
+	width: 75%;
+	height: 80px;
+	color: green;
+    z-index: 15;
+	display: flex;
+	margin-left: 23%;
+	align-self: center;
+	font-size: 25px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info{
+	border-radius: 10px;
+	background-color: rgb(178, 0, 0);
+	width: 30%;
+	height: 50px;
+	color: black;
+	display: flex;
+	align-self: center;
+	align-items: center;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.info:hover{
+	background-color: rgba(255, 0, 0, 0.733);
+	transform: scale(1.1);
+	font-size: 28px;
+}
+.galeria{
+	border-radius: 10px;
+	background-color: rgb(178, 0, 0);
+	width: 30%;
+	height: 50px;
+	color: black;
+	display: flex;
+	align-self: center;
+	align-items: center;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.galeria:hover{
+	background-color: rgba(255, 0, 0, 0.733);
+	transform: scale(1.1);
+	font-size: 28px;
+}
+.kontakt{
+	border-radius: 10px;
+	background-color: rgb(178, 0, 0);
+	width: 30%;
+	height: 50px;
+	color: black;
+	display: flex;
+	align-self: center;
+	align-items: center;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.kontakt:hover{
+	background-color: rgba(255, 0, 0, 0.733);
+	transform: scale(1.1);
+	font-size: 28px;
+}
+.obrazok{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	display: none;
+}
+.prezentacia{
+	margin-top: 100px;
+	margin-left: 20%;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	width: 60%;
+	height: 60%;
+	display: block;
+	overflow: hidden;
+}
+
+.text{
+	width: 100%;
+	height: 1000px;
+    background-color: gray;
+}
+h1{
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 20px;
+}
+p{
+	text-align: center;
+}
+.rozprava{
+	width: 50%;
+	height: 50%;
+	padding: 10px;
+	font-size: 25px;
+	float: left;
+	margin-left: 8%;
+}
+.strom{
+	width: 30%;
+	height: auto;
+	float: right;
+	margin-right: 7%;
+}
+.stromcek{
+	width: 73%;
+	height: 73%;
+	border-radius: 10px;
+}
+footer{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: rgb(102, 102, 102);
+	padding: 12px;
+}
+
+.animate-opacity{animation:opac 1.5s}@keyframes opac{from{opacity:0} to{opacity:1} }
+
+
+@media only screen and (max-width: 1700px) {
+	.rozprava {font-size: 23px}
+}
+@media only screen and (max-width: 1500px) {
+	.rozprava {font-size: 20px}
+}
+@media only screen and (max-width: 900px) {
+	.rozprava {font-size: 15px}
+}
+@media only screen and (max-width: 700px) {
+	.rozprava {font-size: 12px}
+}
+
+@media only screen and (max-width: 900px) {
+	.menu {font-size: 20px}
+}
+@media only screen and (max-width: 900px) {
+	h1 {font-size: 50px}
+}
+
+@media only screen and (max-width: 1700px) {
+	.stromcek {width: 80%; height: 80%;}
+}
+@media only screen and (max-width: 1500px) {
+	.stromcek {width: 90%; height: 90%;}
+}
+@media only screen and (max-width: 1300px) {
+	.stromcek {width: 100%; height: 100%;}
+}
+@media only screen and (max-width: 1000px) {
+	.stromcek {width: 110%; height: 110%;}
+}
+
+@media only screen and (max-width: 900px) {
+	.text {height: 600px;}
+}
